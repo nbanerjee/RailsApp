@@ -4,18 +4,18 @@ development:
   database: myapp_development
   pool: 5
   username: root
-  password: kreeti
+  password: mysql
 test:
   adapter: mysql2
   encoding: utf8
   database: myapp_test
   pool: 5
   username: root
-  password: kreeti
+  password: mysql
 production:
   adapter: mysql2
   encoding: utf8
   database: myapp_production
   pool: 5
   username: root
-  password: kreeti
+  password: mysql
