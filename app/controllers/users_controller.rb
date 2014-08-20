@@ -31,6 +31,7 @@ class UsersController < ApplicationController
        # flash[:success] = "User was successfully created."
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
+        sign_in @user
       else
        # flash[:error] = "It failed"
         format.html { render :new }
